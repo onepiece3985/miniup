@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini UP</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./datepicker.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-title">MINI UP</div> 
+        <div class="navbar-content">Daftar Satker
+            <div class="navbar-list">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="up-profil">
+        <div class="info-satker">
+            <div class="satker-title">Satuan Kerja</div>
+            <div class="satker-nama">Balai Taman Nasional Takabonerate</div>
+            <div class="satker-kode">666666</div>
+        </div>
+        <div class="info-up">
+            <div class="data-up">
+                <div class="up-title">UP</div>
+                <div class="up-nilai">30.000.000</div>
+            </div>
+            <div class="data-gup">
+                <div class="gup-title">GUP Terakhir</div>
+                <div class="gup-tanggal">24 Februari 2023</div>
+            </div>
+        </div>
+    </div>
+    <div class="up-kalender">
+        <div class="datepicker">
+            <div class="header">
+                <div class="prev">
+                    Prev
+                </div>
+                <div class="month-title">
+                    Januari
+                </div>
+                <div class="next">
+                    Next
+                </div>
+            </div>
+            <div class="content">
+                <div class="days">
+                    <div class="day minggu">Min</div>
+                    <div class="day senin">Sen</div>
+                    <div class="day selasa">Sel</div>
+                    <div class="day rabu">Rab</div>
+                    <div class="day kamis">Kam</div>
+                    <div class="day jumat">Jum</div>
+                    <div class="day sabtu">Sab</div>
+                </div>
+                <div class="dates">
+                    <div class="date dummy"></div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="perhitungan-nilai">
+            <div class="info-nilaigup">
+                <div class="nilaigup-title">Nilai GUP</div>
+                <div class="nilaigup-value">15.000.000</div>
+                <input type="number" class="simulasi-value" name="simulasi-value" value="" placeholder="Masukkan Nilai GUP">
+            </div>
+            <div class="info-nilaiikpa">
+                <div class="nilaiikpa-title">Nilai IKPA</div>
+                <div class="nilaiikpa-value">100</div>
+            </div>
+            <button class="simulasi-ikpa">
+                Simulasi Perhitungan IKPA
+            </button>
+            <input type="submit" value="Hitung Nilai IKPA" class="submit-ikpa">
+        </div>
+    </div>
+    <div class="tup">
+        <!-- <div class="info-tup">
+            <div class="data-tup">
+                <div class="tup-title">TUP</div>
+                <div class="tup-nilai">50.000.000</div>
+            </div>
+            <div class="batas-gup">
+                <div class="batas-title">Batas Waktu PTUP</div>
+                <div class="batas-tanggal">1 April 2023</div>
+            </div>
+        </div> -->
+        <div class="info-histori">
+            <div class="histori-title">Histori Efektivitas TUP</div>
+            <div class="histori-donut">
+                <canvas id="myCanvas" width="300" height="150">
+                    Your browser does not support the HTML5 canvas tag.
+                </canvas>
+            </div>
+            <h1 class="histori-value">75.19%</h1>
+        </div>
+    </div>
+
+    <script src="datepicker.js"></script>
+    <script src="donut.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

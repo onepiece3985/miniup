@@ -1,0 +1,298 @@
+body {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(10, 1fr);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+    color: #0081F5;
+    padding: 0px 16px 0px 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+.navbar {
+    padding: 16px;
+    grid-column: 1/3;
+    grid-row: 1/-1;
+    /* border: 1px solid black; */
+    background-color: #0081F5;
+    color: #fff;
+}
+
+    .navbar-title {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .navbar-content {
+        margin-top: 60px;
+
+    }
+
+    /* .navbar-content:hover{
+        overflow: visible;
+    } */
+
+    .navbar-list {
+        margin-top: 8px;
+        
+    }
+
+.up-profil {
+    margin-top: 24px;
+    padding: 16px;
+    grid-column: 3/9;
+    grid-row: 1/6;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    /* background-color: #074AC6; */
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+    .info-satker {
+        /* border: 1px solid black; */
+        background-color: #0081F5;
+        border-radius: 8px;
+        color: #fff;
+        padding: 16px;
+        margin-top: 6px;
+    }
+
+        .satker-title {
+            font-size: 1em;
+            font-weight: 200;
+
+        }
+
+        .satker-nama {
+            font-size: 2.5em;
+            margin-top: 12px;
+        }
+
+        .satker-kode {
+            font-size: 2.5em;
+            margin-top: 6px;
+        }
+
+    .info-up {
+        margin-top: 12px;
+        /* border: 1px solid black; */
+        font-size: 1em;
+        padding: 12px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+        .data-up, .data-gup {
+            border-radius: 8px;
+            border: 1px solid blue;
+        }
+
+        .data-up {
+            grid-column: 1/2;
+            
+        }
+
+        .data-gup {
+            grid-column: 2/3;
+        }
+
+            .up-title, .gup-title {
+                font-size: 1em;
+                
+            }
+
+            .up-nilai, .gup-tanggal {
+                margin-top: 4px;
+                font-size: 2em;
+                
+            }
+
+.up-kalender {
+    /* background-color: #fff; */
+    grid-column: 3/13;
+    grid-row: 6/11;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    padding: 16px;
+}
+
+    .datepicker {
+        border: 1px solid #0081F5;
+    }
+
+    .info-nilaigup, .info-nilaiikpa {
+        
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        border-radius: 8px;
+        /* border: 1px solid blue; */
+        margin-bottom: 16px;
+        box-shadow: 4px 4px 6px #bbb, -4px -4px 6px #fff;
+        color: rgba(0, 0, 0, 0.65)
+
+    }
+
+        .nilaigup-title, .nilaiikpa-title {
+            font-size: 1em;
+
+            
+        }
+
+        .nilaigup-value, .nilaiikpa-value {
+            margin-top: 4px;
+            font-size: 2em;
+            
+
+        }
+
+
+
+.tup {
+    margin-top: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    grid-column: 9/13;
+    grid-row: 1/6;
+    padding: 16px;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat (9,1fr);
+    margin-bottom: 12px;
+    
+}
+
+    .info-tup {
+        /* border: 1px solid black; */
+        grid-column: 1/6;
+        padding: 12px;
+        display: none;
+    }
+
+        .data-tup, .batas-gup {
+            margin-top: 0.5em;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            font-size: 1.5em;
+            display: none;
+
+        }
+
+            .tup-title, .batas-title {
+                width: 50%;
+
+            }
+
+            .tup-nilai, .batas-tanggal {
+                width: 50%;
+                text-align: right;
+
+            }
+
+    
+
+    .info-histori {
+        border: 1px solid blue;
+        
+        border-radius: 6px;
+        padding: 16px;
+        margin-left: 30px;
+        
+    }
+
+    .histori-title {
+        text-align: center;
+    }
+
+    .histori-chart {
+        margin-top: 24px;
+        width: 100%;
+        height: 60%;
+        margin-left: 40%;
+    }
+
+        .donut-1 {
+            margin: 2px;
+            display: inline-block;
+            width: 102px;
+            height: 102px;
+            position: absolute;
+            /* border: 1px solid black; */
+            border-radius: 50%;
+            background-color: #0081F5;
+        }
+
+        .donut-2 {
+            display: inline-block;
+            width: 104px;
+            height: 104px;
+            /* border: 2px solid #fff; */
+            box-sizing: border-box;
+            border-radius: 50%;
+            /* border-top: 16px solid transparent; */
+            background-color: #fff;
+            position: absolute;
+            clip-path: polygon(50% 0, 50% 50%, 10% 0);
+        }
+
+        .donut-center {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            /* border: 1px solid black; */
+            border-radius: 50%;
+            margin: 22px 22px 22px 24px;
+            background-color: #fff;
+            text-align: center;
+            
+
+        }
+
+            .donut-value {
+                margin-top: 20px;
+            }
+
+
+    .histori-donut {
+        text-align: center;
+    }
+
+    .histori-value {
+        text-align: center;
+    }
+
+    .simulasi-value {
+        font-size: 2em;
+        border: none;
+        border-radius: 8px;
+        visibility: hidden;
+        display: none;
+    }
+
+    .submit-ikpa {
+        display: none;
+        visibility: hidden
+    }
+
+    .visible {
+        display: inline-block;
+        visibility: visible;
+    }
+
+    .hidden {
+        visibility: hidden;
+        display: none;
+    }
+        
+

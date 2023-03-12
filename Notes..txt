@@ -1,0 +1,5 @@
+Landing page berupa dashboard mengenai informasi UP dan GUP
+
+Informasi mengenai dashboard :
+1. Tanggal yang berkedip di kalender adalah deadline GUP satker
+2. Satker dapat melakukan simulasi perhitungan nilai IKPA dengan meng-klik tombol "Simulasi perhitungan IKPA". Nanti satker akan memilih tanggal dan menentukan besaran GUP, perhitungan formula IKPA akan dikerjakan di backend.

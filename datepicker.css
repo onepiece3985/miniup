@@ -1,0 +1,95 @@
+
+.calendar {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+    .header {
+        margin-top: 8px;
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .content {
+        
+        width: 100%;
+        
+
+
+    }
+
+        .days {
+            /* border: 1px solid blue; */
+            margin-top: 12px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            font-weight: 600;
+
+        }
+
+            .day {
+                /* border: 1px solid black; */
+                text-align: center;
+            }
+
+        .dates {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            height: 20vh;
+            justify-items: center;
+        }
+
+        .dates .clicked {
+            border: 2px solid lightblue;
+            
+        }
+
+        .date {
+            margin-top: 12px;
+            text-align: center;
+            height: 2.4em;
+            width: 2.4em;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 2.3em;
+            box-sizing: border-box;
+            
+        }
+
+        .dummy {
+            /* display:none; */
+        }
+
+        .today {
+            border: 1px solid #0081F5;
+            box-sizing: border-box;
+            /* background-color: #0081F5;
+            color: #fff; */
+            
+        }
+
+        .deadline {
+            animation: blink 5s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                background-color: #fff;
+                color: #0081F5;
+            }
+
+            50% {
+                background-color: #0081F5;
+                color: #fff;
+            }
+
+            100% {
+                background-color: #fff;
+                color: #0081F5;
+            }
+        }
+
+        
